@@ -8,6 +8,14 @@
         [users]="inactiveUsers"
       ></app-inactive-users>
     </div>
+    <div>
+      <div class="row">
+        <div class="col-xs-12">
+          <p>Users activated: {{counterService.counter.usersMadeActive}}</p>
+          <p>Users disabled: {{counterService.counter.usersMadeInactive}}</p>
+        </div>
+      </div>
+    </div>
     <!--
       Optimize this app by adding a UsersService which manages the active and inactive users.
 
